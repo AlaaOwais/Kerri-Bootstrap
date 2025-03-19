@@ -1,0 +1,208 @@
+:root
+{
+    --main-color:#E65F78;
+    --backgroungcolor: #f0f0f0;
+}
+html{
+    scroll-padding: 72px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+body section:nth-child(even)
+{
+    background-color: var(--backgroungcolor);
+} 
+/* -----------------------navbar --------------------------- */
+
+nav div.container li .active
+{
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+/* -----------------------gear fixed------------------------ */
+.gear
+{
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    top: 100px;
+    border-radius: 0 4px 4px 0;
+    padding: 20px;
+}
+
+/* -----------------------header section----------------------- */
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,.3) , rgba(0,0,0,.3) ) , url("../images/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vb;
+}
+header .container p
+{
+    width: 50%;
+}
+header .container h2::after
+{
+    content: "";
+    animation: typing-animation 5s steps(20) infinite;
+}
+@keyframes typing-animation {
+    0% { content: "|"; }
+    5% { content: "D|"; }
+    10% { content: "De|"; }
+    15% { content: "Dev|"; }
+    20% { content: "Deve|"; }
+    25% { content: "Devel|"; }
+    30% { content: "Develo|"; }
+    35% { content: "Develop|"; }
+    40% { content: "Developer|"; }
+    45% { content: "Develop|"; }
+    50% { content: "Develo|"; }
+    55% { content: "Devel|"; }
+    60% { content: "Deve|"; }
+    65% { content: "Dev|"; }
+    70% { content: "De|"; }
+    75% { content: "D|"; }
+    80% { content: "Des|"; }
+    85% { content: "Desi|"; }
+    90% { content: "Desig|"; }
+    95% { content: "Design|"; }
+    100% { content: "Designer|"; }
+}
+header .container button:hover
+{
+    background-color: white;
+    color: black !important ; 
+}
+header .container .shape
+{
+    border-color: white;
+    width: 40px;
+    height: 80px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .container .shape .dot
+{
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    animation: dwon-up 1s infinite ;
+}
+@keyframes dwon-up 
+{
+    0% {
+        opacity: .2;
+        bottom: 50px;
+    }
+    100%
+    {
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+div.container div.title
+{
+    width: 50%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+/* ---------------------------------------About section------------------------------- */
+div.about-contant h5 span.title
+{
+    color: var(--main-color);
+    font-weight: bold;
+}
+section.about div.about-contant div.icons ul.sc-icons li
+{
+    width: 50px;
+    height: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /* border: solid #ddd;
+    border-radius: 50%; */
+} 
+section.about div.about-contant div.icons ul.sc-icons li :hover 
+{
+    border: solid var(--main-color) !important;
+    /* border-color:  var(--main-color) !important; */
+    /* border: solid var(--main-color);
+    border-radius: 50%;
+    padding: 13px; */
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* --------------------------client section------------------------------ */
+div.carousel div.carousel-indicators button
+{
+    background-color: var(--main-color);
+}
+
+/* ----------------------------work section------------------------------- */
+section.work div.container ul{
+    width: fit-content;
+    margin-inline: auto;
+}
+section.work div.container ul li button
+{
+    border-radius: 200px;
+    color: black;
+}
+section.work div.container ul li button.active
+{
+    background-color: var(--main-color);
+}
+section.work div.container div.layer
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    color: white;
+    transition: transform 0.3s  ;
+    
+}
+section.work div.container div.work-img:hover div.layer
+{
+    transform: translateY(0);
+}
+section.work div.container div.work-img img
+{
+    transition: .5s ;
+}
+section.work div.container div.work-img:hover img
+{
+    transform: scale(1.5);
+    filter: blur(2px);
+}
+
+/* ----------------------------contact section------------------------------- */
+section.contact div.contact-form textarea
+{
+    min-height: 150px;
+    max-height: 250px;
+}
+section.contact div.contact-form button
+{
+    width: fit-content;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
