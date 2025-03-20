@@ -124,6 +124,7 @@ section.about div.about-contant div.icons ul.sc-icons li
 {
     width: 50px;
     height: 50px;
+    transition: .4s;
 } 
 section.about div.about-contant div.icons ul.sc-icons li:hover 
 {
