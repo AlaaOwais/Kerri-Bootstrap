@@ -124,19 +124,10 @@ section.about div.about-contant div.icons ul.sc-icons li
 {
     width: 50px;
     height: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;*/
-    /* border: solid #ddd;
-    border-radius: 50%; */
 } 
-section.about div.about-contant div.icons ul.sc-icons li :hover 
+section.about div.about-contant div.icons ul.sc-icons li:hover 
 {
     border: solid var(--main-color) !important;
-    /* border-color:  var(--main-color) !important; */
-    /* border: solid var(--main-color);
-    border-radius: 50%;
-    padding: 13px; */
     color: var(--main-color);
     cursor: pointer;
 }
